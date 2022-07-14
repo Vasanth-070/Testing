@@ -39,6 +39,7 @@ class PhotoWriter {
   enum Errors: Error {
     case couldNotSavePhoto
   }
+  print("34")
  static  func save(_ image:UIImage) -> Observable<String> {
     return Observable.create{ observer in
       var savedAssetId:String?
